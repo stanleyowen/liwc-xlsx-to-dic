@@ -69,8 +69,8 @@ def write_category_tree_section(f, root_cats, indent=0):
     if indent == 0:
         f.write('%\n')
 
-    for cat in sorted(root_cats, key=lambda x: int(x['id'])):
-        f.write(f"{'    '*indent}{cat['id']}\t{cat['name']} ({cat['desc']})\n")
+    for cat in root_cats:
+        f.write(f"{'\t'*indent}{cat['id']}\t{cat['name']} ({cat['desc']})\n")
         if cat['children']:
             write_category_tree_section(f, cat['children'], indent+1)
 
