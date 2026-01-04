@@ -108,7 +108,18 @@ def xlsx_to_liwc_dic(xlsx_path, dic_path):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print('Usage: python xlsx_to_liwc_dic.py input.xlsx output.dic')
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print('Usage: python xlsx_to_liwc_dic.py input.xlsx [output.dic]')
         sys.exit(1)
-    xlsx_to_liwc_dic(sys.argv[1], sys.argv[2])
+
+    input_file = sys.argv[1]
+
+    if len(sys.argv) == 3:
+        output_file = sys.argv[2]
+    else:
+        # Generate output filename by replacing extension with .dic
+        import os
+        base_name = os.path.splitext(input_file)[0]
+        output_file = base_name + '.dic'
+
+    xlsx_to_liwc_dic(input_file, output_file)

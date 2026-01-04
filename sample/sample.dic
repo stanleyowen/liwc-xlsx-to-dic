@@ -1,0 +1,67 @@
+%
+1	func (Function Words)
+    2	pronoun (Pronouns)
+        3	ppron (Personal Pronouns)
+            4	i (1st Person Singular (I))
+            5	we (1st Person Plural (We))
+            6	you (2nd Person (You))
+            7	shehe (3rd Person Singular (She/He))
+            8	they (3rd Person Plural (They))
+            9	youpl (2nd Person Plural (You guys/Y'all))
+        10	ipron (Impersonal Pronouns)
+    11	prep (Prepositions)
+    12	auxverb (Auxiliary Verbs)
+    13	adverb (Adverbs)
+    14	conj (Conjunctions)
+    15	negate (Negations)
+    17	quanunit (Unit Quantifiers / Measure Words)
+%
+above	11
+although	14
+am	12
+and	14
+because	14
+but	14
+cup*	17
+have	12
+he	7
+her	7
+him	3	7
+i	2	3	4
+in	11
+it	1	10
+it's	10
+itself	2
+just	13
+let's	5
+me	4
+mine	4
+must	12
+my	4
+never	15
+no	1	15
+none	15
+not	15
+our	5
+piece	17
+quickly	13
+really	13
+she	7
+slice	17
+that	10
+their	8
+them	2	8
+they	8
+those	10
+thou	6
+to	1	11
+use	5
+very	1	13
+we	3	5
+will	12
+with	11
+y'all	6	9
+you	2	3	6
+you guys	9
+you lot	9
+your	6
